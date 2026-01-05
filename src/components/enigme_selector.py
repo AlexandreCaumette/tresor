@@ -37,6 +37,7 @@ def main_enigme_selector():
 
         st.session_state["puzzle_id"] = qr_code
 
-        st.session_state["toggle_scanner"] = False
+        st.rerun()
 
+    if st.button(label="Actualiser la page", icon=":material/refresh:", type="primary"):
         st.rerun()

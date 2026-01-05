@@ -1,6 +1,5 @@
 import streamlit as st
 
-from src import log
 from src.components.login import main_login
 from src.components.place_hint import main_place_hint
 from src.data.ordre_enigmes import ORDRE
@@ -55,8 +54,6 @@ def main_page_home():
     st.header("🏡 Accueil")
 
     main_presentation()
-
-    log.info("Displaying home page.")
 
     team_id: str = st.session_state.get("team_id", None)
 

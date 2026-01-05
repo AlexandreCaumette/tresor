@@ -1,12 +1,8 @@
 import polars as pl
 import streamlit as st
 
-from src import log
-
 
 def main_page_treasure():
-    log.info("Displaying solution page.")
-
     st.header("👑 Récupérer le trésor")
 
     coordinates = st.text_input(
