@@ -9,11 +9,13 @@ from src import log
 def main_enigme_selector():
     st.subheader("Sélection de l'énigme")
 
+    if "toggle_scanner" not in st.session_state:
+        st.session_state["toggle_scanner"] = False
+
     if st.toggle(
         label="Scanner un QR code",
-        value=False,
+        value=st.session_state.toggle_scanner,
         help="Cibler le QR Code avec votre caméra.",
-        key="toggle_scanner",
     ):
         qr_code = qrcode_scanner(key="qrcode_scanner")
 
@@ -36,6 +38,8 @@ def main_enigme_selector():
         st.success("Le QR code a correctement été scanné !", icon="✅")
 
         st.session_state["puzzle_id"] = qr_code
+
+        st.session_state.toggle_scanner = False
 
         st.rerun()
 
