@@ -12,6 +12,9 @@ def main_enigme_selector():
     if "toggle_scanner" not in st.session_state:
         st.session_state["toggle_scanner"] = False
 
+    if st.button(label="Actualiser la page", icon=":material/refresh:", type="primary"):
+        st.rerun()
+
     if st.toggle(
         label="Scanner un QR code",
         value=st.session_state.toggle_scanner,
@@ -43,5 +46,4 @@ def main_enigme_selector():
 
         st.rerun()
 
-    if st.button(label="Actualiser la page", icon=":material/refresh:", type="primary"):
-        st.rerun()
+        return
