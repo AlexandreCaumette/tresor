@@ -1,14 +1,11 @@
 import streamlit as st
 
-from src import log
 from src.components.enigme_displayer import main_enigme_displayer
 from src.components.enigme_selector import main_enigme_selector
 
 
 def main_page_puzzle():
-    log.info("Displaying enigme page.")
-
-    st.header("🧩 Les énigmes du Papa Enfonças")
+    st.header("🧩 Les énigmes du *Papa Enfonças*")
 
     main_enigme_selector()
 

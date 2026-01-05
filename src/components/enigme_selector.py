@@ -13,15 +13,14 @@ def main_enigme_selector():
         label="Scanner un QR code",
         value=False,
         help="Cibler le QR Code avec votre caméra.",
+        key="toggle_scanner",
     ):
-        log.info("Searching for a qr code.")
-
         qr_code = qrcode_scanner(key="qrcode_scanner")
 
         if qr_code is None:
             return
 
-        log.info(f"qr code found with value '{qr_code}'")
+        log.debug(f"qr code found with value '{qr_code}'")
 
         if isinstance(qr_code, BytesIO):
             qr_code = qr_code.getvalue()
@@ -37,5 +36,7 @@ def main_enigme_selector():
         st.success("Le QR code a correctement été scanné !", icon="✅")
 
         st.session_state["puzzle_id"] = qr_code
+
+        st.session_state["toggle_scanner"] = False
 
         st.rerun()

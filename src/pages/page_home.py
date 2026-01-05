@@ -37,7 +37,7 @@ def main_explications():
     Pour éviter que les équipes ne trichent, chaque énigme sera énoncée
     en 3 version différentes, avec 3 réponses différentes.
 
-    Une fois arrivé sur le lieu d'une énigme, utilisez la page *"Enigme"* pour scanner le QR code de l'énigme.
+    Une fois arrivé sur le lieu d'une énigme, utilisez la page *"🧩 Enigme"* pour scanner le QR code de l'énigme.
 
     Les morceaux de la localisation du trésor ne seront pas sauvegardés dans cette interface, :red[à vous
     de les noter].
