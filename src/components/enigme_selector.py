@@ -1,3 +1,5 @@
+from io import BytesIO
+
 import streamlit as st
 from streamlit_qrcode_scanner import qrcode_scanner
 
@@ -21,11 +23,12 @@ def main_enigme_selector():
 
         log.info(f"qr code found with value '{qr_code}'")
 
-        qr_code_value = qr_code.getvalue()
+        if isinstance(qr_code, BytesIO):
+            qr_code = qr_code.getvalue()
 
-        if len(qr_code_value) > 1:
+        if len(qr_code) > 1:
             st.error(
-                f"Le QR code scanné renvoie la valeur'{qr_code_value}', ce qui n'est pas acceptable.",
+                f"Le QR code scanné renvoie la valeur'{qr_code}', ce qui n'est pas acceptable.",
                 icon="❌",
             )
 
