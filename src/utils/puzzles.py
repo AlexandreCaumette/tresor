@@ -4,7 +4,7 @@ from src import log
 from src.data.dict_enigmes import PUZZLES
 
 
-def get_team_puzzle(puzzle_id: int) -> dict | None:
+def get_team_puzzle(puzzle_id: str) -> dict | None:
     puzzle = PUZZLES.get(puzzle_id)
 
     if puzzle is None:

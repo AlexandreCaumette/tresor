@@ -1,5 +1,5 @@
 PUZZLES = {
-    1: {
+    "1": {
         "meta": {
             "title": "TITRE EXEMPLE",
             "category": "Dehors",
@@ -19,7 +19,7 @@ PUZZLES = {
             "coordinate": "31",
         },
     },
-    2: {
+    "2": {
         "meta": {
             "title": "TITRE EXEMPLE",
             "category": "Dehors",
@@ -35,7 +35,7 @@ PUZZLES = {
         "team_2": {"coordinate": "21"},
         "team_3": {"coordinate": ".9"},
     },
-    3: {
+    "3": {
         "meta": {
             "title": "TITRE EXEMPLE",
             "category": "Dehors",
@@ -51,7 +51,7 @@ PUZZLES = {
         "team_2": {"coordinate": "03"},
         "team_3": {"coordinate": "2."},
     },
-    4: {
+    "4": {
         "meta": {
             "title": "TITRE EXEMPLE",
             "category": "Résidence",
@@ -67,7 +67,7 @@ PUZZLES = {
         "team_2": {"coordinate": "23"},
         "team_3": {"coordinate": "2."},
     },
-    5: {
+    "5": {
         "meta": {
             "title": "TITRE EXEMPLE",
             "category": "Résidence",
@@ -87,7 +87,7 @@ PUZZLES = {
         },
         "team_3": {"coordinate": "21"},
     },
-    6: {
+    "6": {
         "meta": {
             "title": "TITRE EXEMPLE",
             "category": "Résidence",
@@ -103,7 +103,7 @@ PUZZLES = {
         "team_2": {"coordinate": "54"},
         "team_3": {"coordinate": "03"},
     },
-    7: {
+    "7": {
         "meta": {
             "title": "TITRE EXEMPLE",
             "category": "Appartement",
@@ -119,7 +119,7 @@ PUZZLES = {
         "team_2": {"coordinate": "31"},
         "team_3": {"coordinate": "54"},
     },
-    8: {
+    "8": {
         "meta": {
             "title": "TITRE EXEMPLE",
             "category": "Appartement",
@@ -135,7 +135,7 @@ PUZZLES = {
         "team_2": {"coordinate": ".9"},
         "team_3": {"coordinate": "23"},
     },
-    9: {
+    "9": {
         "meta": {
             "title": "TITRE EXEMPLE",
             "category": "Appartement",

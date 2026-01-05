@@ -6,7 +6,7 @@ from src.data.dict_enigmes import PUZZLES
 from src.utils.puzzles import get_team_puzzle
 
 
-def get_next_puzzle(puzzle_id: int) -> dict | None:
+def get_next_puzzle(puzzle_id: str) -> dict | None:
     # On récupère l'id de l'équipe dans le session state.
     team_id: str = st.session_state.team_id
 
@@ -32,7 +32,7 @@ def get_next_puzzle(puzzle_id: int) -> dict | None:
     return next_puzzle
 
 
-def main_enigme_displayer(puzzle_id: int):
+def main_enigme_displayer(puzzle_id: str):
     st.subheader(f"Enigme n°{puzzle_id}")
 
     puzzle = get_team_puzzle(puzzle_id=puzzle_id)
