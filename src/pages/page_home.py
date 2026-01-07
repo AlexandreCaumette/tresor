@@ -64,13 +64,22 @@ def main_page_home():
 
         return
 
+    if st.session_state.get("team_name", "") == "admin":
+        st.divider()
+
+        main_login()
+
     st.divider()
 
     main_explications()
 
     st.divider()
 
-    first_puzzle_id = ORDRE.get(team_id, [])[0]
-    puzzle = get_team_puzzle(puzzle_id=first_puzzle_id)
+    team_order = ORDRE.get(team_id, [])
 
-    main_place_hint(puzzle=puzzle)
+    if len(team_order) > 0:
+        first_puzzle_id = team_order[0]
+
+        puzzle = get_team_puzzle(puzzle_id=first_puzzle_id)
+
+        main_place_hint(puzzle=puzzle)

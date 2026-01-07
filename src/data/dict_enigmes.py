@@ -1,27 +1,72 @@
 PUZZLES = {
     "1": {
         "meta": {
-            "title": "TITRE EXEMPLE",
             "category": "Dehors",
             "place": "Table de ping-pong",
-            "place_hint": "Waheeee !!! (mais en petit)",
+            "place_hint": "WAAHÉÉÉÉÉÉÉÉ !!! (mais en plus petit)",
             "help": "Toute l'équipe doit faire le poirier (se faire aider est accepté)",
+            "puzzle_hint": [
+                "Trouver l'adresse du Théâtre de la Garenne-Colombes.",
+                "Trouver l'heure d'une représentation au théâtre.",
+                "Trouver une représentation d'une oeuvre de Marcel Pagnol et calculer son temps de fin.",
+                "Faire la somme des nombres pairs du timestamp de la fin de la représentation.",
+                "Trouver le menu dont le prix correspond au nombre obtenu.",
+            ],
         },
         "team_1": {
-            "question": """Quelle est la couleur du cheval blanc d'Henri IV ?""",
-            "answer": "blanc",
+            "question": """
+            Ils étaient 22 à la Bataille de Verdun,
+
+            Ils ont attendu la fin de Marcel Pagnol,
+
+            À l'heure de la vitesse de Louis Jean,
+
+            They measured the timbre du temps,
+
+            Ils ont pris l'INSEE 80 de ceux qui laissent un reste,
+
+            Que leurs a servi leur tante ?
+            """,
+            "answer": "menu tata",
             "coordinate": "48",
         },
         "team_2": {
+            "question": """
+            Elles étaient 22 à la Bataille de Verdun,
+
+            Elles ont attendu la fin de Marcel Pagnol,
+
+            À l'heure de la vitesse de Louis Jean,
+            
+            They measured the timbre du temps,
+            
+            Elles ont pris l'INSEE 80 de ceux qui ne laissent pas de reste,
+
+            Que leurs a servi leur tante ?
+            """,
+            "answer": "menu midi",
             "coordinate": "2.",
         },
         "team_3": {
+            "question": """
+            Ils étaient 22 à la Bataille de Verdun,
+
+            Ils ont attendu la fin de Marcel Pagnol,
+
+            À l'heure de la vitesse de Louis Jean,
+
+            They measured the timbre du temps,
+
+            Ils ont pris l'INSEE 80 de ceux qui laissent un reste,
+
+            Que leurs a servi leur tante ?
+            """,
+            "answer": "menu tata",
             "coordinate": "31",
         },
     },
     "2": {
         "meta": {
-            "title": "TITRE EXEMPLE",
             "category": "Dehors",
             "place": "Place des Champs-Philippe",
             "place_hint": "20h15 ? C'est noté M. Lilian",
@@ -37,7 +82,6 @@ PUZZLES = {
     },
     "3": {
         "meta": {
-            "title": "TITRE EXEMPLE",
             "category": "Dehors",
             "place": "Arrêt de bus",
             "place_hint": "Oh la flemme, on marche pas on prend le ...",
@@ -53,26 +97,44 @@ PUZZLES = {
     },
     "4": {
         "meta": {
-            "title": "TITRE EXEMPLE",
             "category": "Résidence",
             "place": "Boîte aux lettres",
             "place_hint": "Lilian ne l'a jamais quitté et Adrien ne l'a jamais rejoint.",
             "help": "L'équipe doit mimer chaque lettre de son nom d'équipe, dans l'ordre, et en une seule image (soit avec une prise en panorama, soit avec un montage)",
+            "puzzle_hint": [
+                "Edmond LAGUERRE",
+                "RUE ÂNE",
+                "ROSARIO",
+                "SYRMA",
+                "L'inscription sur le paillasson",
+            ],
         },
         "team_1": {
-            "question": """Qu'est-ce qui est petit et marron ?""",
-            "answer": "marron",
+            "question": """
+            - Un célèbre mathématicien français du XIXème siècle
+            - Une avenue cheval
+            - Elle se situe au bord du Paraná, à 285 km au nord-ouest de Buenos Aires
+            - Elle éclaire la vierge en ascension droite 14h 16m 00,88s
+
+            Le tout vous donnera une réponse acide.
+            """,
+            "answer": "when life gives you lemon grab the gin",
             "coordinate": ".9",
         },
-        "team_2": {"coordinate": "23"},
-        "team_3": {"coordinate": "2."},
+        "team_2": {
+            "answer": "when life gives you lemon grab the gin",
+            "coordinate": "23",
+        },
+        "team_3": {
+            "answer": "when life gives you lemon grab the gin",
+            "coordinate": "2.",
+        },
     },
     "5": {
         "meta": {
-            "title": "TITRE EXEMPLE",
             "category": "Résidence",
             "place": "Parking",
-            "place_hint": "Bip bip",
+            "place_hint": "Il faut bip bip pour y aller",
             "help": "Chaque membre de l'équipe doit réussir un flip cup",
         },
         "team_1": {
@@ -89,7 +151,6 @@ PUZZLES = {
     },
     "6": {
         "meta": {
-            "title": "TITRE EXEMPLE",
             "category": "Résidence",
             "place": "Accueil bâtiment A",
             "place_hint": "Same same hall, but different letter",
@@ -105,7 +166,6 @@ PUZZLES = {
     },
     "7": {
         "meta": {
-            "title": "TITRE EXEMPLE",
             "category": "Appartement",
             "place": "Sous le lit de Noé",
             "place_hint": "Une famille de ragondins y logent depuis notre emménagement",
@@ -121,7 +181,6 @@ PUZZLES = {
     },
     "8": {
         "meta": {
-            "title": "TITRE EXEMPLE",
             "category": "Appartement",
             "place": "Cache de la baignoire",
             "place_hint": "Tous les cheveux de Maya y mènent",
@@ -137,7 +196,6 @@ PUZZLES = {
     },
     "9": {
         "meta": {
-            "title": "TITRE EXEMPLE",
             "category": "Appartement",
             "place": "Cache des housses du canapé",
             "place_hint": "Des housses de protection du canapé ? Ah bon ?",

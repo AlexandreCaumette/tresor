@@ -43,7 +43,9 @@ def main_enigme_displayer(puzzle_id: str):
     st.text("Voici l'énoncé de l'énigme à résoudre :")
 
     with st.container(border=True):
-        st.markdown(puzzle.get("question", ""))
+        question = puzzle.get("question", "")
+
+        st.markdown(question)
 
     st.space(size="small")
 
@@ -58,7 +60,7 @@ def main_enigme_displayer(puzzle_id: str):
 
     answer = st.text_input(
         label="Saisissez la réponse à l'énigme :",
-        help="Texte en minuscule, avec les tirets remplacés par des espaces.",
+        help="Texte en minuscule, avec les tirets remplacés par des espaces, si possible sans article défini.",
     )
 
     if st.button(
@@ -68,7 +70,9 @@ def main_enigme_displayer(puzzle_id: str):
         icon=":material/check_circle:",
         help="Il faut saisir au moins 1 caractère dans le champ de saisi de texte.",
     ):
-        answer = answer.lower().replace("-", " ")
+        answer = (
+            answer.lower().replace("-", " ").replace(" de ", " ").replace(" du ", " ")
+        )
 
         if answer != puzzle.get("answer"):
             st.error(

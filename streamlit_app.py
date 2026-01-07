@@ -1,6 +1,7 @@
 import streamlit as st
 
 from src.components.logo import main_logo
+from src.pages.page_admin import main_page_admin
 from src.pages.page_home import main_page_home
 from src.pages.page_puzzle import main_page_puzzle
 from src.pages.page_treasure import main_page_treasure
@@ -31,10 +32,17 @@ def main():
         page=main_page_treasure, title="Trésor", icon="👑", url_path="tresor"
     )
 
+    page_admin = st.Page(
+        page=main_page_admin, title="Admin", icon="🛡️", url_path="admin"
+    )
+
     pages = [page_login]
 
     if "team_id" in st.session_state:
         pages.append(page_puzzle)
+
+    if st.session_state.get("team_name", None) == "admin":
+        pages.append(page_admin)
 
     if st.session_state.get("status", None) == "terminated":
         pages.append(page_treasure)
