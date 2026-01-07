@@ -33,8 +33,8 @@ def main_explications():
     La chasse au trésor est composée de **9 énigmes**, chaque énigme résolue vous apportera
     la localisation de l'énigme suivante, ainsi qu'une partie de la localisation du trésor.
 
-    Pour éviter que les équipes ne trichent, chaque énigme sera énoncée
-    en 3 version différentes, avec 3 réponses différentes.
+    Pour éviter que les équipes ne trichent, certaines énigmes seront énoncées
+    en 3 versions différentes, avec 3 réponses différentes.
 
     Une fois arrivé sur le lieu d'une énigme, utilisez la page *"🧩 Enigme"* pour scanner le QR code de l'énigme.
 

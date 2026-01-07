@@ -15,51 +15,57 @@ PUZZLES = {
         },
         "team_1": {
             "question": """
-            Ils étaient 22 à la Bataille de Verdun,
+            Il faut deviner les indices suggérés par chacune de ces phrases, qui vous guideront vers la réponse à la question :
 
-            Ils ont attendu la fin de Marcel Pagnol,
+            *Ils étaient 22 à la Bataille de Verdun,*
 
-            À l'heure de la vitesse de Louis Jean,
+            *Ils ont attendu la fin de Marcel Pagnol,*
 
-            They measured the timbre du temps,
+            *À l'heure de la vitesse de Louis Jean,*
 
-            Ils ont pris l'INSEE 80 de ceux qui laissent un reste,
+            *They measured the timbre du temps,*
 
-            Que leurs a servi leur tante ?
+            *Ils ont pris l'INSEE 80 de ceux qui laissent un reste,*
+
+            *Que leurs a servi leur tante ?*
             """,
             "answer": "menu tata",
             "coordinate": "48",
         },
         "team_2": {
             "question": """
-            Elles étaient 22 à la Bataille de Verdun,
+            Il faut deviner les indices suggérés par chacune de ces phrases, qui vous guideront vers la réponse à la question :
 
-            Elles ont attendu la fin de Marcel Pagnol,
+            *Ils étaient 22 à la Bataille de Verdun,*
 
-            À l'heure de la vitesse de Louis Jean,
-            
-            They measured the timbre du temps,
-            
-            Elles ont pris l'INSEE 80 de ceux qui ne laissent pas de reste,
+            *Ils ont attendu la fin de Marcel Pagnol,*
 
-            Que leurs a servi leur tante ?
+            *À l'heure de la vitesse de Louis Jean,*
+
+            *They measured the timbre du temps,*
+
+            *Ils ont pris l'INSEE 80 de ceux qui laissent un reste,*
+
+            *Que leurs a servi leur tante ?*
             """,
-            "answer": "menu midi",
+            "answer": "menu tata",
             "coordinate": "2.",
         },
         "team_3": {
             "question": """
-            Ils étaient 22 à la Bataille de Verdun,
+            Il faut deviner les indices suggérés par chacune de ces phrases, qui vous guideront vers la réponse à la question :
 
-            Ils ont attendu la fin de Marcel Pagnol,
+            *Ils étaient 22 à la Bataille de Verdun,*
 
-            À l'heure de la vitesse de Louis Jean,
+            *Ils ont attendu la fin de Marcel Pagnol,*
 
-            They measured the timbre du temps,
+            *À l'heure de la vitesse de Louis Jean,*
 
-            Ils ont pris l'INSEE 80 de ceux qui laissent un reste,
+            *They measured the timbre du temps,*
 
-            Que leurs a servi leur tante ?
+            *Ils ont pris l'INSEE 80 de ceux qui laissent un reste,*
+
+            *Que leurs a servi leur tante ?*
             """,
             "answer": "menu tata",
             "coordinate": "31",
@@ -122,10 +128,26 @@ PUZZLES = {
             "coordinate": ".9",
         },
         "team_2": {
+            "question": """
+            - Un célèbre mathématicien français du XIXème siècle
+            - Une avenue cheval
+            - Elle se situe au bord du Paraná, à 285 km au nord-ouest de Buenos Aires
+            - Elle éclaire la vierge en ascension droite 14h 16m 00,88s
+
+            Le tout vous donnera une réponse acide.
+            """,
             "answer": "when life gives you lemon grab the gin",
             "coordinate": "23",
         },
         "team_3": {
+            "question": """
+            - Un célèbre mathématicien français du XIXème siècle
+            - Une avenue cheval
+            - Elle se situe au bord du Paraná, à 285 km au nord-ouest de Buenos Aires
+            - Elle éclaire la vierge en ascension droite 14h 16m 00,88s
+
+            Le tout vous donnera une réponse acide.
+            """,
             "answer": "when life gives you lemon grab the gin",
             "coordinate": "2.",
         },
@@ -138,16 +160,68 @@ PUZZLES = {
             "help": "Chaque membre de l'équipe doit réussir un flip cup",
         },
         "team_1": {
-            "question": """QUESTION EXEMPLE""",
-            "answer": "REPONSE EXEMPLE",
+            "question": """
+            Il faut comprendre les mots derrière chacune de ces phrases, qui donneront la question à laquelle il faut répondre :
+            
+            *Un fromage dont l'affinage se compte en mois,*
+
+            *Noé,*
+
+            *The word standing for G in (king of like) R-enewable N-atural G-as,*
+
+            *XVIII-XVI,*
+
+            *Le héro préféré de Serge,*
+
+            *Mettre à niveau un mur,*
+
+            *Comme un Michel en 1984.*
+            """,
+            "answer": "7",
             "coordinate": "9,",
         },
         "team_2": {
-            "question": """QUESTION EXEMPLE""",
-            "answer": "REPONSE EXEMPLE",
+            "question": """
+            Il faut comprendre les mots derrière chacune de ces phrases, qui donneront la question à laquelle il faut répondre :
+            
+            *Un fromage dont l'affinage se compte en mois,*
+
+            *Noé,*
+
+            *The word standing for G in (king of like) R-enewable N-atural G-as,*
+
+            *XVIII-XVI,*
+
+            *Le héro préféré de Serge,*
+
+            *Mettre à niveau un mur,*
+
+            *Comme un Michel en 1984.*
+            """,
+            "answer": "7",
             "coordinate": "48",
         },
-        "team_3": {"coordinate": "21"},
+        "team_3": {
+            "question": """
+            Il faut comprendre les mots derrière chacune de ces phrases, qui donneront la question à laquelle il faut répondre :
+            
+            *Un fromage dont l'affinage se compte en mois,*
+
+            *Noé,*
+
+            *The word standing for G in (king of like) R-enewable N-atural G-as,*
+
+            *XVIII-XVI,*
+
+            *Le héro préféré de Serge,*
+
+            *Mettre à niveau un mur,*
+
+            *Comme un Michel en 1984.*
+            """,
+            "answer": "7",
+            "coordinate": "21",
+        },
     },
     "6": {
         "meta": {
