@@ -5,7 +5,7 @@ def main_place_hint(puzzle: dict | None):
     if puzzle is None:
         return
 
-    hint = puzzle.get("meta", {}).get("place_hint", "")
+    hint = puzzle.get("place_hint")
 
     st.text("🔎 Indice pour trouver la prochaine énigme :")
 

@@ -3,7 +3,7 @@ import streamlit as st
 from src.components.place_hint import main_place_hint
 from src.data import ordre_enigmes
 from src.data.dict_enigmes import PUZZLES
-from src.utils.puzzles import get_team_puzzle
+from src.utils.puzzles import get_puzzle
 
 
 def get_next_puzzle(puzzle_id: str) -> dict | None:
@@ -35,7 +35,7 @@ def get_next_puzzle(puzzle_id: str) -> dict | None:
 def main_enigme_displayer(puzzle_id: str):
     st.subheader(f"Enigme n°{puzzle_id}")
 
-    puzzle = get_team_puzzle(puzzle_id=puzzle_id)
+    puzzle = get_puzzle(puzzle_id=puzzle_id)
 
     if not isinstance(puzzle, dict):
         return
@@ -54,7 +54,7 @@ def main_enigme_displayer(puzzle_id: str):
         icon="❓",
         expanded=False,
     ):
-        st.markdown(puzzle.get("meta", {}).get("help"))
+        st.markdown(puzzle.get("help"))
 
     st.space(size="small")
 
@@ -83,7 +83,9 @@ def main_enigme_displayer(puzzle_id: str):
 
         st.success(f"La réponse proposée **'{answer}'** est correcte !", icon="✅")
 
-        st.info(f"🗺️ Voici la récompese : **'{puzzle.get('coordinate')}'** 📍")
+        st.info(
+            f"🗺️ Voici la récompese : **'{puzzle.get(st.session_state.team_id)}'** 📍"
+        )
 
         st.divider()
 

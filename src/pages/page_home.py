@@ -3,7 +3,7 @@ import streamlit as st
 from src.components.login import main_login
 from src.components.place_hint import main_place_hint
 from src.data.ordre_enigmes import ORDRE
-from src.utils.puzzles import get_team_puzzle
+from src.utils.puzzles import get_puzzle
 
 
 def main_presentation():
@@ -64,7 +64,7 @@ def main_page_home():
 
         return
 
-    if st.session_state.get("team_name", "") == "admin":
+    if st.session_state.get("team_name", "") == "Adminatou":
         st.divider()
 
         main_login()
@@ -80,6 +80,6 @@ def main_page_home():
     if len(team_order) > 0:
         first_puzzle_id = team_order[0]
 
-        puzzle = get_team_puzzle(puzzle_id=first_puzzle_id)
+        puzzle = get_puzzle(puzzle_id=first_puzzle_id)
 
         main_place_hint(puzzle=puzzle)

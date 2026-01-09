@@ -41,7 +41,7 @@ def main():
     if "team_id" in st.session_state:
         pages.append(page_puzzle)
 
-    if st.session_state.get("team_name", None) == "admin":
+    if st.session_state.get("team_name", None) == "Adminatou":
         pages.append(page_admin)
 
     if st.session_state.get("status", None) == "terminated":
