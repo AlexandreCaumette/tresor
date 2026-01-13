@@ -43,10 +43,24 @@ PUZZLES = {
     "3": {
         "category": "Dehors",
         "place": "Arrêt de bus",
-        "place_hint": "Oh la flemme, on marche pas on prend le ...",
+        "place_hint": "16X 7X X6X",
         "help": "Toute l'équipe doit faire l'aviron bayonnais",
-        "question": """QUESTION EXEMPLE""",
-        "answer": "REPONSE EXEMPLE",
+        "puzzle_hint": """
+        - Il faut classer les arrêts de la ligne 163 dans l'ordre alphabétique et identifier les 2 du milieu. (les terrasses et liberté).
+        - Il faut trouver la personne la plus proche de l'arrêt Liberté : Fernand Léger.
+        - Il faut trouver son style de peinture : tubisme.
+        - Avec des tubes on a construit un métallophone.
+        """,
+        "question": """
+        Il faut trouver les réponses à chacune des énigmes, chaque réponse guidant vers la suivante :
+        
+        - ➡️ A mi-chemin entre le A et le Z,
+        - ➡️ C'est le plus proche de la destination,
+        - ➡️ Son flow, sa vibe, sa came, sa patte,
+
+        ❓ Centrale nous a permis d'en faire un.
+        """,
+        "answer": "métallophone",
         "team_1": "23",
         "team_2": "03",
         "team_3": "2.",
