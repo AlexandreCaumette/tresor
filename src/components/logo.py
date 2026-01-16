@@ -16,8 +16,6 @@ def main_logo():
     )
 
     if not path_to_logo.exists():
-        log.error(f"The path {path_to_logo} doesn't exist.")
-
         return
 
     st.logo(image=path_to_logo, size="large")

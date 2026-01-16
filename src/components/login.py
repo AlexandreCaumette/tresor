@@ -19,8 +19,6 @@ def main_login():
         type="primary",
         icon=":material/login:",
     ):
-        log.debug(f"The user typed the team name '{team_name}'")
-
         if team_name not in st.secrets.connection.team_names:
             log.error(f"The team name '{team_name}' is not part of the secrets.")
 
@@ -29,8 +27,6 @@ def main_login():
             )
 
             return
-
-        log.info("The team name is correct. Directing to enigme page.")
 
         st.success(f"Bienvenu à bord équipe {team_name} !", icon="✅")
 

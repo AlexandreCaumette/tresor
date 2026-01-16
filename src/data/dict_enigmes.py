@@ -32,10 +32,23 @@ PUZZLES = {
     "2": {
         "category": "Dehors",
         "place": "Place des Champs-Philippe",
-        "place_hint": "20h15 ? C'est noté M. Lilian",
+        "place_hint": "20h15 ? C'est noté",
         "help": "Toute l'équipe doit mimer une pizzeria en pique d'activité",
-        "question": """QUESTION EXEMPLE""",
-        "answer": "REPONSE EXEMPLE",
+        "puzzle_hint": """
+        - Le nombre de boules autour du sapin : 10
+        - Le nombre de lampadaires sur la place : 11
+
+        Il faut convertir le nombre obtenu en représentation base 12, car il y a 12 heures sur une horloge.
+        """,
+        "question": """
+        Il faut répondre à chacun des questions pour pouvoir trouver la réponse finale :
+        - ➡️ Le dernier les aura, mais en attendant, il faut compter celles qui brillent sur la place,
+        - ➡️ Il y en a quelques génies autour de la place qui ont de bonnes idées une fois par jour, il faut les compter,
+        - ➡️ Le Père Noël,
+
+        ❓Il faut communiquer le nombre obtenu à une horloge. 
+        """,
+        "answer": "30D",
         "team_1": "54",
         "team_2": "21",
         "team_3": ".9",
