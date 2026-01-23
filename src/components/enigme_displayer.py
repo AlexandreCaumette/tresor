@@ -23,7 +23,8 @@ def get_next_puzzle(puzzle_id: str) -> dict | None:
     # Si le prochain indice est en dehors de la liste, alors toutes les énigmes ont été résolues.
     if next_puzzle_index >= len(team_puzzles_order):
         log.info("Dernier puzzle atteint, plus d'énigme à résoudre.")
-        return
+
+        return None
 
     # Sinon on récupère l'id de l'énigme suivante.
     next_puzzle_id = team_puzzles_order[next_puzzle_index]
@@ -95,7 +96,9 @@ def main_enigme_displayer(puzzle_id: str):
 
         next_puzzle = get_next_puzzle(puzzle_id=puzzle_id)
 
-        if not isinstance(next_puzzle, dict):
+        log.info("Prochaine énigme : ", next_puzzle)
+
+        if next_puzzle is None:
             st.balloons()
 
             st.text(
