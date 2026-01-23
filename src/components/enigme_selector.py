@@ -3,8 +3,6 @@ from io import BytesIO
 import streamlit as st
 from streamlit_qrcode_scanner import qrcode_scanner
 
-from src import log
-
 
 def main_enigme_selector():
     st.subheader("Sélection de l'énigme")
@@ -24,8 +22,6 @@ def main_enigme_selector():
 
         if qr_code is None:
             return
-
-        log.debug(f"qr code found with value '{qr_code}'")
 
         if isinstance(qr_code, BytesIO):
             qr_code = qr_code.getvalue()

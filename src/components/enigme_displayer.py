@@ -1,5 +1,6 @@
 import streamlit as st
 
+from src import log
 from src.components.place_hint import main_place_hint
 from src.data import ordre_enigmes
 from src.data.dict_enigmes import PUZZLES
@@ -21,6 +22,7 @@ def get_next_puzzle(puzzle_id: str) -> dict | None:
 
     # Si le prochain indice est en dehors de la liste, alors toutes les énigmes ont été résolues.
     if next_puzzle_index >= len(team_puzzles_order):
+        log.info("Dernier puzzle atteint, plus d'énigme à résoudre.")
         return
 
     # Sinon on récupère l'id de l'énigme suivante.
@@ -84,7 +86,7 @@ def main_enigme_displayer(puzzle_id: str):
         st.success(f"La réponse proposée **'{answer}'** est correcte !", icon="✅")
 
         st.info(
-            f"🗺️ Voici la récompese : **'{puzzle.get(st.session_state.team_id)}'** 📍"
+            f"🗺️ Voici la récompense : **'{puzzle.get(st.session_state.team_id)}'** 📍"
         )
 
         st.divider()
