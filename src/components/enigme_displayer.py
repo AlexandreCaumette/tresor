@@ -1,3 +1,5 @@
+from time import sleep
+
 import streamlit as st
 
 from src import log
@@ -99,13 +101,17 @@ def main_enigme_displayer(puzzle_id: str):
         log.info(f"Prochaine énigme : {next_puzzle}")
 
         if next_puzzle is None:
+            st.markdown("""
+            Vous êtes arrivés au bout des énigmes !
+            
+            Une nouvelle page est apparue dans la barre de navigation 👑
+            """)
+
             st.balloons()
 
-            st.text(
-                "Vous êtes arrivés au bout des énigmes. Une nouvelle page est apparue dans la barre de navigation 👑",
-            )
-
             st.session_state["status"] = "terminated"
+
+            sleep(2)
 
             st.rerun()
 
