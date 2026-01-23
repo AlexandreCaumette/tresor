@@ -35,20 +35,22 @@ PUZZLES = {
         "place_hint": "20h15 ? C'est noté",
         "help": "Toute l'équipe doit mimer une pizzeria en pique d'activité",
         "puzzle_hint": """
-        - Le nombre de boules autour du sapin : 10
-        - Le nombre de lampadaires sur la place : 11
+        - Le nombre de boules rouge autour du sapin : 20
+        - Le nombre de boules jaune autour du sapin : 19
+        - Le nombre de lampes des lampadaires sur la place : 20
+        -
 
         Il faut convertir le nombre obtenu en représentation base 12, car il y a 12 heures sur une horloge.
         """,
         "question": """
         Il faut répondre à chacun des questions pour pouvoir trouver la réponse finale :
         - ➡️ Le dernier les aura, mais en attendant, il faut compter celles qui brillent sur la place,
-        - ➡️ Il y en a quelques génies autour de la place qui ont de bonnes idées une fois par jour, il faut les compter,
-        - ➡️ Le Père Noël,
+        - ➡️ Le dernier les aura, mais en attendant, il faut compter celles qui brillent sur la place,
+        - ➡️ Elles sont quelques génies autour de la place à avoir de bonnes idées une fois la nuit tombée,
 
-        ❓Il faut communiquer le nombre obtenu à une horloge. 
+        ❓nombre_heures = pl.concat(les_nombres_obtenus, how='horizontally') puis communiquez le à une horloge. 
         """,
-        "answer": "30D",
+        "answer": "98A28",
         "team_1": "54",
         "team_2": "21",
         "team_3": ".9",
@@ -143,8 +145,8 @@ PUZZLES = {
         "place": "Accueil bâtiment A",
         "place_hint": "Same same hall, but different letter.",
         "help": "Chaque membre de l'équipe doit manger un insecte grillé",
-        "question": """QUESTION EXEMPLE""",
-        "answer": "REPONSE EXEMPLE",
+        "question": """QUESTION""",
+        "answer": "REPONSE",
         "team_1": "31",
         "team_2": "54",
         "team_3": "03",

@@ -38,7 +38,9 @@ def main_enigme_selector():
 
             return
 
-        st.success("Le QR code a correctement été scanné !", icon="✅")
+        st.success(
+            "Le QR code a correctement été scanné ! Actualiser la page.", icon="✅"
+        )
 
         st.session_state["puzzle_id"] = qr_code
 
