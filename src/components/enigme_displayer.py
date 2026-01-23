@@ -96,7 +96,7 @@ def main_enigme_displayer(puzzle_id: str):
 
         next_puzzle = get_next_puzzle(puzzle_id=puzzle_id)
 
-        log.info("Prochaine énigme : ", next_puzzle)
+        log.info(f"Prochaine énigme : {next_puzzle}")
 
         if next_puzzle is None:
             st.balloons()
