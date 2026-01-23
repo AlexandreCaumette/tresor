@@ -111,7 +111,7 @@ def main_enigme_displayer(puzzle_id: str):
 
             st.session_state["status"] = "terminated"
 
-            sleep(2)
+            sleep(5)
 
             st.rerun()
 
