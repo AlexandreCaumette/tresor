@@ -12,11 +12,12 @@ def main_presentation():
     body = """
     Bienvenu jeunes aventuriers téméraires et audacieux.
 
-    🏰 Vous venez de mettre un pied sur la sinistrement célèbre Arche de la Garenne-Colombes,
-    connue pour ses nauséabondes odeurs de chausson d'escalade, ou ses incessants cris d'animaux
+    🏰 Vous venez de mettre un pied dans la sinistrement célèbre Arche de la Garenne-Colombes,
+    connue pour ses nauséabondes odeurs de chaussons d'escalade, ou ses incessants cris d'animaux
     sauvage (*"bibi ! keke ! bibi ! puta carmen !!!"*).
 
-    🏴‍☠️ Vous cherchez mon trésor ? Je vous le laisse si vous voulez ! Trouvez-le ! Je l'ai laissé quelque part dans ce quartier !
+    🏴‍☠️ Vous cherchez mon trésor ? Je vous le laisse si vous voulez ! Trouvez-le ! 
+    Je l'ai laissé quelque part dans ce quartier !
 
     ⌛ Mais ne tardez pas, d'autres pirates sont également en chemin et essayeront de vous devancer...
     """
@@ -30,16 +31,14 @@ def main_explications():
     body = f"""
     Bonjour équipe **:orange[{st.session_state.team_name}]** !
 
-    La chasse au trésor est composée de **9 énigmes**, chaque énigme résolue vous apportera
+    La chasse au trésor est composée de **9 énigmes**, chaque énigme résolue vous apportera un indice sur
     la localisation de l'énigme suivante, ainsi qu'une partie de la localisation du trésor.
 
-    Pour éviter que les équipes ne trichent, certaines énigmes seront énoncées
-    en 3 versions différentes, avec 3 réponses différentes.
+    Une fois arrivé sur le lieu d'une énigme, vous devez trouver un QR Code caché quelque part.
+    Une fois trouvé, vous pouvez utiliser la page *"🧩 Enigme"* pour scanner le QR code de l'énigme.
 
-    Une fois arrivé sur le lieu d'une énigme, utilisez la page *"🧩 Enigme"* pour scanner le QR code de l'énigme.
-
-    Les morceaux de la localisation du trésor ne seront pas sauvegardés dans cette interface, :red[à vous
-    de les noter].
+    Les morceaux de la localisation du trésor ne seront pas sauvegardés dans cette interface, **:red[à vous
+    de les noter]**.
 
     L'équipe qui remportera le trésor sera la première arrivée à la localisation finale, et avec la
     localisation exacte notée.

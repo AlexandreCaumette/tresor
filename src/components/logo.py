@@ -2,8 +2,6 @@ import pathlib
 
 import streamlit as st
 
-from src import log
-
 
 def main_logo():
     if "team_id" not in st.session_state:

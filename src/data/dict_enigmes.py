@@ -50,7 +50,7 @@ PUZZLES = {
 
         ❓nombre_heures = pl.concat(les_nombres_obtenus, how='horizontally') puis communiquez le à une horloge. 
         """,
-        "answer": "98A28",
+        "answer": "98a28",
         "team_1": "54",
         "team_2": "21",
         "team_3": ".9",
