@@ -207,11 +207,11 @@ PUZZLES = {
 
         - ➡️ Placez vous sous l'étoile du berger,
         - ➡️ Orientez vous face à la Tour Eiffel,
-        - ➡️ Avancez jusqu'à la place de l'étoile,
+        - ➡️ Avancez jusqu'à la caméra,
         - ➡️ Identifiez Sylvain vintage,
         - ➡️ Retrouvez le dans la pièce,
-        - ➡️ Comptez le nombre de contenant de terre noire,
-        - ➡️ Multipliez par l'heure congelée en minutes,
+        - ➡️ Comptez le nombre de contenant de terres noires,
+        - ➡️ Multipliez par l'heure congelée dans la cuisine en minutes,
 
         ❓ Quel nombre obtenez-vous ?
         """,
