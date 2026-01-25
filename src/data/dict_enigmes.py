@@ -146,7 +146,7 @@ PUZZLES = {
         "place_hint": "Same same hall, but different letter.",
         "help": "Chaque membre de l'équipe doit manger un insecte grillé",
         "question": """QUESTION""",
-        "answer": "REPONSE",
+        "answer": "reponse",
         "team_1": "31",
         "team_2": "54",
         "team_3": "03",
